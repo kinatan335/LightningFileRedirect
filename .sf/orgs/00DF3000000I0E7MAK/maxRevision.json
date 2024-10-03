@@ -1,0 +1,59 @@
+{
+    "serverMaxRevisionCounter": 20,
+    "sourceMembers": {
+        "CustomField__ContentVersion.ExternalFileUrl__c": {
+            "serverRevisionCounter": 13,
+            "lastRetrievedFromServer": 13,
+            "memberType": "CustomField",
+            "isNameObsolete": false
+        },
+        "Profile__Admin": {
+            "serverRevisionCounter": 12,
+            "lastRetrievedFromServer": null,
+            "memberType": "Profile",
+            "isNameObsolete": false
+        },
+        "ApexClass__ContentDownloadHandlerFactoryImpl": {
+            "serverRevisionCounter": 14,
+            "lastRetrievedFromServer": 14,
+            "memberType": "ApexClass",
+            "isNameObsolete": false
+        },
+        "ApexClass__ContentDownloadHandlerFactoryImplTest": {
+            "serverRevisionCounter": 15,
+            "lastRetrievedFromServer": 15,
+            "memberType": "ApexClass",
+            "isNameObsolete": false
+        },
+        "ApexClass__ExtFileLinkController": {
+            "serverRevisionCounter": 16,
+            "lastRetrievedFromServer": 16,
+            "memberType": "ApexClass",
+            "isNameObsolete": false
+        },
+        "ApexClass__ExtFileLinkControllerTest": {
+            "serverRevisionCounter": 17,
+            "lastRetrievedFromServer": 17,
+            "memberType": "ApexClass",
+            "isNameObsolete": false
+        },
+        "ApexClass__ExtFileLinkCreateByFlow": {
+            "serverRevisionCounter": 18,
+            "lastRetrievedFromServer": 18,
+            "memberType": "ApexClass",
+            "isNameObsolete": false
+        },
+        "ApexClass__ExtFileLinkCreateByFlowTest": {
+            "serverRevisionCounter": 19,
+            "lastRetrievedFromServer": 19,
+            "memberType": "ApexClass",
+            "isNameObsolete": false
+        },
+        "ApexPage__ExtFileLinkControl": {
+            "serverRevisionCounter": 20,
+            "lastRetrievedFromServer": 20,
+            "memberType": "ApexPage",
+            "isNameObsolete": false
+        }
+    }
+}
