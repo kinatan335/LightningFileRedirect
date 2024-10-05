@@ -2,7 +2,7 @@
 <Flow xmlns="http://soap.sforce.com/2006/04/metadata">
     <actionCalls>
         <name>Action_createFileLink</name>
-        <label>外部ファイルリンク作成</label>
+        <label>リダイレクト作成</label>
         <locationX>182</locationX>
         <locationY>242</locationY>
         <actionName>ExtFileLinkCreateByFlow</actionName>
@@ -20,13 +20,13 @@
         <inputParameters>
             <name>reqFileDesc</name>
             <value>
-                <elementReference>inputDescription</elementReference>
+                <elementReference>inputRedirectDescription</elementReference>
             </value>
         </inputParameters>
         <inputParameters>
             <name>reqFileName</name>
             <value>
-                <elementReference>inputRedirectFileName</elementReference>
+                <elementReference>fFileTitle</elementReference>
             </value>
         </inputParameters>
         <inputParameters>
@@ -98,7 +98,7 @@
         <inputParameters>
             <name>urlLabel</name>
             <value>
-                <elementReference>inputRedirectFileName</elementReference>
+                <elementReference>inputRedirectTitle</elementReference>
             </value>
         </inputParameters>
         <nameSegment>c:showToast</nameSegment>
@@ -141,6 +141,11 @@
         <name>fErrorMessage</name>
         <dataType>String</dataType>
         <expression>&quot;エラーが発生しました Message: &quot; + {!Action_createFileLink.errorMessage}</expression>
+    </formulas>
+    <formulas>
+        <name>fFileTitle</name>
+        <dataType>String</dataType>
+        <expression>&quot;【共有リンク】&quot; + {!inputRedirectTitle}</expression>
     </formulas>
     <interviewLabel>コンテンツバージョン: リダイレクト作成 {!$Flow.CurrentDateTime}</interviewLabel>
     <label>コンテンツバージョン: リダイレクト作成</label>
@@ -192,7 +197,7 @@
                 <name>Screen_PramInput_Section1_Column2</name>
                 <fieldType>Region</fieldType>
                 <fields>
-                    <name>inputRedirectFileName</name>
+                    <name>inputRedirectTitle</name>
                     <dataType>String</dataType>
                     <fieldText>共有リンク名（ファイル名やフォルダ名など）</fieldText>
                     <fieldType>InputField</fieldType>
@@ -231,7 +236,7 @@
                     <storeOutputAutomatically>true</storeOutputAutomatically>
                 </fields>
                 <fields>
-                    <name>inputDescription</name>
+                    <name>inputRedirectDescription</name>
                     <dataType>String</dataType>
                     <fieldText>説明（ファイルの内容や共有範囲など）</fieldText>
                     <fieldType>InputField</fieldType>

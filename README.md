@@ -1,18 +1,16 @@
-# Salesforce DX Project: Next Steps
+# 外部ファイルにリダイレクトする添付ファイルを作成する
 
-Now that you’ve created a Salesforce DX project, what’s next? Here are some documentation resources to get you started.
+画面フローを使用して任意のオブジェクトレコードにSharePointやGoogleDrive等の外部ファイルを開くことができるファイルを作成して、ファイルをダウンロードしたときにリンク先にリダイレクトするようにします。ファイルではなくフォルダやサイトURLでもOK。
 
-## How Do You Plan to Deploy Your Changes?
+## 作るもの
 
-Do you want to deploy a set of changes, or create a self-contained application? Choose a [development model](https://developer.salesforce.com/tools/vscode/en/user-guide/development-models).
+1. 画面フロー
+1. コンテンツバージョンを作成するクラス
+1. ダウンロードを制御するクラス
+1. リダイレクトさせるVisualforceページ
+1. Visualforceページのコントローラ
 
-## Configure Your Salesforce DX Project
+## 使い方
 
-The `sfdx-project.json` file contains useful configuration information for your project. See [Salesforce DX Project Configuration](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_ws_config.htm) in the _Salesforce DX Developer Guide_ for details about this file.
+オブジェクトのアクションにソースコードに含まれる画面フロー「コンテンツバージョン: リダイレクト作成」を設定します。
 
-## Read All About It
-
-- [Salesforce Extensions Documentation](https://developer.salesforce.com/tools/vscode/)
-- [Salesforce CLI Setup Guide](https://developer.salesforce.com/docs/atlas.en-us.sfdx_setup.meta/sfdx_setup/sfdx_setup_intro.htm)
-- [Salesforce DX Developer Guide](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_intro.htm)
-- [Salesforce CLI Command Reference](https://developer.salesforce.com/docs/atlas.en-us.sfdx_cli_reference.meta/sfdx_cli_reference/cli_reference.htm)
