@@ -2,15 +2,16 @@
 
 画面フローを使用して任意のオブジェクトレコードにSharePointやGoogleDrive等の外部ファイルを開くことができるファイルを作成して、ファイルをダウンロードしたときにリンク先にリダイレクトするようにします。ファイルではなくフォルダやサイトURLでもOK。
 
-## 作るもの
-
-1. 画面フロー
-1. コンテンツバージョンを作成するクラス
-1. ダウンロードを制御するクラス
-1. リダイレクトさせるVisualforceページ
-1. Visualforceページのコントローラ
+## 含まれているもの
+1. 共有リンクURLを保持するカスタム項目 ExternalFileUrl__c
+1. 画面フローで使用するトースト表示Auraコンポートネント showToast
+1. 共有リンク名やリンクURLを入力する画面フロー ContentVersion_createRedirect
+1. コンテンツバージョンを作成するクラス ExtFileLinkCreateByFlow
+1. ダウンロードを制御するクラス ContentDownloadHandlerFactoryImpl
+1. リダイレクトさせるVisualforceページ ExtFileLinkControl
+1. Visualforceページのコントローラ ExtFileLinkController
 
 ## 使い方
 
-オブジェクトのアクションにソースコードに含まれる画面フロー「コンテンツバージョン: リダイレクト作成」を設定します。
+ソースコードに含まれる画面フロー「コンテンツバージョン: リダイレクト作成」をLightningページに配置、またはオブジェクトのアクションに設定してレイアウトに追加します。
 
