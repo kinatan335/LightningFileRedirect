@@ -15,3 +15,7 @@
 
 ソースコードに含まれる画面フロー「コンテンツバージョン: リダイレクト作成」をLightningページに配置、またはオブジェクトのアクションに設定してレイアウトに追加します。
 
+### ロック解除済パッケージのインストール
+
+ノーコードで使用する場合は、以下URLからインストールを行う。{PackageVersionId}はリリースに記載。
+https\://{MyDomainName}.lightning.force.com/packagingSetupUI/ipLanding.app?apvId={PackageVersionId}
