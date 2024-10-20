@@ -2,7 +2,7 @@
   "packageDirectories": [
     {
       "versionName": "ver 0.1",
-      "versionNumber": "0.1.2.NEXT",
+      "versionNumber": "0.1.4.NEXT",
       "path": "force-app",
       "default": true,
       "package": "LightningFileRedirect",
@@ -17,6 +17,7 @@
     "LightningFileRedirect@0.1.0-1": "04tIU000000fE2dYAE",
     "LightningFileRedirect@0.1.0-2": "04tIU000000fE2iYAE",
     "LightningFileRedirect@0.1.1-1": "04tIU000000fE2nYAE",
-    "LightningFileRedirect@0.1.2-1": "04tIU000000fE2sYAE"
+    "LightningFileRedirect@0.1.2-1": "04tIU000000fE2sYAE",
+    "LightningFileRedirect@0.1.4-1": "04tIU000000fEBwYAM"
   }
 }
